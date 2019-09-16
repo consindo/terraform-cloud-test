@@ -1,3 +1,7 @@
+provider "aws" {
+  region = "us-west-2"
+}
+
 data "http" "example" {
   url = "https://api.github.com/repos/dymajo/waka/branches/master"
 }
